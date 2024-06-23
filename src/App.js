@@ -17,7 +17,7 @@ function App() {
                   Layout = Fragment
                 }
 
-                return <Route key={index} path={route.path} element={<Layout> <Page/> </Layout>} />
+                return <Route key={index} path={route.path} element={<Layout> <Page/> </Layout>} /> // Layout(header, sidebar)  
               })}
           </Routes>
       </div>
