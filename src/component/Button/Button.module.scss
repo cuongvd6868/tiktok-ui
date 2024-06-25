@@ -56,6 +56,22 @@
     }
 }
 
+.icon + .title, 
+.title + .icon {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+}
+
 
 // Button sizes
 .small {

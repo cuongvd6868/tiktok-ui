@@ -1,7 +1,26 @@
 
 
 
-//Menu
-.content {
-    width: 224px;
+//Menu wrapper
+.menu-list {
+    width: 230px;
+
+    
+}
+
+//Menu Item
+.menu-list .menu-item {
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 0;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.05);
+    }
+}
+
+.menu-poper {
+    padding-bottom: 8px;
 }
