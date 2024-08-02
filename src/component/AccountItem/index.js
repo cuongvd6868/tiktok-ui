@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 function AccountItem() {
     return ( 
         <div className={cx('wrapper')}>
-            <img className={cx('avatar')} src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/dfa709ae985f7de7723c66ff6284bb64.jpeg?lk3s=a5d48078&nonce=95165&refresh_token=feeca4e478dbd8f62db87c31b42d1625&x-expires=1719410400&x-signature=4KukQGzA%2FXAuqY1pRx1GjrzJHls%3D&shp=a5d48078&shcp=81f88b70" alt="Hoa"/>
+            <img className={cx('avatar')} src="https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/718cee8583c6b50ef0930db16808b1f8.jpeg?lk3s=a5d48078&nonce=2157&refresh_token=c0f347d6de0d8ff59b7c598eabeadea1&x-expires=1722686400&x-signature=adqRgs6%2BQsj46btis0OKGbTO0A0%3D&shp=a5d48078&shcp=81f88b70" alt="Hoa"/>
             <div className={cx('info')}>
                 <p className={cx('name')}>
                    <span>Vuong Dinh Cuong</span>
