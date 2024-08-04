@@ -4,8 +4,7 @@ import { Wrapper as PopperWrapper } from '~/component/Poper';
 import AccountItem from '~/component/AccountItem';
 import { useDebounce } from '~/hooks';
 import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
-import * as request from '~/utils/request'
-import * as searchservice from '~/service/searchService';
+import * as searchService from '~/service/searchService';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,7 +30,7 @@ function Search() {
         const fetchApi = async () => {
             setLoading(true);
 
-            const result = await searchservice.search(debounced);
+            const result = await searchService.search(debounced);
             setSearchResult(result);
 
             setLoading(false); // compele call api, hide loading
@@ -55,7 +54,6 @@ function Search() {
         if(!searchValue.startsWith(' ')) {
             setSearchValue(searchValue);
         }
-
     }
 
     return (
