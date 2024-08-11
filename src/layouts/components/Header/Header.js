@@ -16,7 +16,7 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Button from '~/component/Button';
-import Menu from '~/component/Poper/Menu';
+import Menu from '~/component/Poper/Menu/Menu';
 import Image from '~/component/Image';
 import Search from '../Search/Search';
 
@@ -96,7 +96,7 @@ function Header() {
     ]
 
     return (
-        <header className={cx('wrapper')}>
+    <header className={cx('wrapper')}>
         <div className={cx('inner')}>
                 <Link to={config.routes.home} className={cx('logo-link')}>
                     <img src={images.logo} alt='TikTok'/>
@@ -126,7 +126,7 @@ function Header() {
                         <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                             {currentUser ? (
                                 <Image 
-                                src='https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/718cee8583c6b50ef0930db16808b1f8.jpeg?lk3s=a5d48078&nonce=2157&refresh_token=c0f347d6de0d8ff59b7c598eabeadea1&x-expires=1722686400&x-signature=adqRgs6%2BQsj46btis0OKGbTO0A0%3D&shp=a5d48078&shcp=81f88b70'
+                                src='https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/435683103_1111774246816176_1565537745690258604_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=3XU3LP7zN5EQ7kNvgFQkRo2&_nc_ht=scontent.fdad3-4.fna&oh=00_AYCtlH2Pef9wPGtv-fiaZEJm0hoSpuyLFPenkjJLaFZWyA&oe=66BE0BB3'
                                 className={cx('user-avatar')} 
                                 alt='lisa'  />
                             ) : (
